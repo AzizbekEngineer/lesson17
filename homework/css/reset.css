@@ -1,0 +1,87 @@
+/* --- common start --- */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  transition: 0.5s;
+}
+
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.backtop {
+  position: fixed;
+  bottom: calc(-1 * var(--backtop-size));
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--backtop-size);
+  height: var(--backtop-size);
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  transition: 0.5s;
+}
+
+.backtop img {
+  width: 50%;
+}
+
+.backtop-show {
+  bottom: 20px;
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto
+}
+
+.btn {
+  border: 1px solid transparent;
+  padding: 14px 30px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: capitalize;
+}
+
+.btn:hover{
+    color: var(--primaryColor);
+    background-color: white;
+}
+
+.df__ac{
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width:1400px){
+  .container{
+    width: 1200px;
+  }
+}
+
+
+
+/* --- common end --- */

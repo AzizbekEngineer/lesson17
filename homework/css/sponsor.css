@@ -1,0 +1,64 @@
+.sponsors {
+  padding: 130px 0;
+  background: #fdd04a;
+  text-align: center;
+}
+
+.sponsors__title {
+  color: var(--firstColor) !important;
+  opacity: 0.9;
+  padding-bottom: 44px;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 58px;
+}
+
+.sponsors__desc {
+  max-width: 570px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  color: var(--firstColor) !important;
+  opacity: 0.7;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.sponsors__cards {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.sponsors__card {
+  width: 180px;
+}
+
+.sponsors__card img {
+  width: 100%;
+}
+
+@media (max-width: 445px) {
+  .sponsors__title {
+    padding-bottom: 30px;
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .sponsors__desc {
+    padding-bottom: 30px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .sponsors__card {
+    width: 70%;
+  }
+}
+
+.light .sponsors{
+  background: white !important;
+}
+
+.light {
+  --firstColor: black;
+  --secondaryColor: white;
+}

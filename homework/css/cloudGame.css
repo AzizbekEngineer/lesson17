@@ -1,0 +1,151 @@
+.cloudGame {
+  padding: 120px 0;
+  background: black;
+}
+
+.cloud__infos {
+  display: flex;
+  gap: 5px;
+  align-items: flex-start;
+  padding-bottom: 12px;
+}
+
+.cloud__info {
+  color: var(--primaryColor);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 100% */
+  text-transform: uppercase;
+}
+
+.cloud__title {
+  max-width: 680px;
+  padding-bottom: 40px;
+  color: var(--firstColor) !important;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 74px;
+}
+
+.cloud__desc {
+  max-width: 720px;
+  padding-bottom: 50px;
+  color: var(--firstColor) !important;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.cloud__btn {
+  background: #57b8ff;
+  color: white;
+}
+
+.cloud__btn:hover {
+  color: #57b8ff;
+  background-color: white;
+}
+
+.cloud__right {
+  width: 40%;
+  position: relative;
+}
+
+.cloud__right .cloud__right--img {
+  width: 100%;
+}
+
+.cloud__video {
+  position: absolute;
+  top: 250px;
+  left: 150px;
+}
+
+@media (max-width: 1200px) {
+  .cloudGame__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cloud__left,
+  .cloud__right {
+    width: 90%;
+  }
+
+  .cloud__video {
+    position: absolute;
+    top: 450px;
+    left: 350px;
+  }
+}
+
+@media (max-width: 900px) {
+  .cloud__video {
+    position: absolute;
+    top: 320px;
+    left: 280px;
+  }
+}
+
+@media (max-width: 700px) {
+  .cloud__video {
+    position: absolute;
+    top: 280px;
+    left: 150px;
+  }
+  .cloud__title {
+    padding-bottom: 30px;
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .cloud__desc {
+    padding-bottom: 30px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 530px) {
+  .cloud__video {
+    position: absolute;
+    top: 200px;
+    left: 130px;
+  }
+  .cloud__title {
+    padding-bottom: 20px;
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .cloud__desc {
+    padding-bottom: 20px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 430px) {
+  .cloud__video {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+  }
+}
+
+@media (max-width: 370px) {
+  .cloud__video {
+    position: absolute;
+    top: 120px;
+    left: 80px;
+  }
+}
+
+.light .cloudGame{
+  background: white;
+}
+
+.light {
+  --firstColor: black;
+  --secondaryColor: white;
+}

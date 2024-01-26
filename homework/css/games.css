@@ -1,0 +1,61 @@
+.games {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.game__card {
+  position: relative;
+  width: 33.3%;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.game-card__content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game__card .card__back {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  transition: 1s;
+}
+
+.game__card:hover .card__back {
+  width: 130%;
+  height: 130%;
+}
+
+.game__card h3{
+  padding-top: 30px;
+  font-size: 36px;
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .game__card {
+    width: 50% !important;
+    height: 700px;
+  }
+}
+@media (max-width: 600px) {
+  .game__card {
+    width: 100% !important;
+    height: 600px;
+  }
+}
+
+.light {
+  --firstColor: black;
+  --secondaryColor: white;
+}

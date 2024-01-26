@@ -1,0 +1,192 @@
+header {
+  background: linear-gradient(to right, black 50%, 50%, #57B8FF 100%);
+}
+
+nav{
+background: linear-gradient(to right, black 50%, 50%, #57B8FF 100%);
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: black !important;
+}
+
+.nav__container {
+  justify-content: space-between;
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.nav__list {
+  display: flex;
+}
+
+nav {
+  width: 100%;
+}
+
+.navbar-shrink {
+  box-shadow: 0px 2px 5px gray;
+  background: var(--secondaryColor);
+}
+
+.nav__list,
+.nav__btns {
+  gap: 20px;
+}
+
+.list__lan {
+  gap: 20px;
+}
+
+.nav__item,
+.lan__item {
+  color: var(--firstColor);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  border-bottom: 1px solid transparent;
+  transition: 0.5s;
+}
+
+.nav__item:hover {
+  border-color: #fac422;
+  color: #fac422;
+}
+
+.nav__item::after{
+
+}
+
+.lan__item:hover {
+  color: #fac422;
+}
+
+#mode-btn {
+  background-color: transparent;
+}
+
+.contact__btn {
+  border: 1px solid var(--firstColor);
+  padding: 14px 28px;
+  background-color: var(--primaryColor);
+  color: var(--firstColor);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.contact__btn:hover {
+  color: var(--primaryColor);
+  background-color: var(--firstColor);
+}
+
+.menu__btn {
+  display: none;
+}
+
+@media (max-width: 890px) {
+  .menu__btn {
+    display: block;
+  }
+  .nav__list {
+    position: fixed;
+    top: 0;
+    left: -50%;
+    width: 50%;
+    background-color: rgb(26, 25, 25);
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .nav__humburger--btn {
+    display: block;
+  }
+}
+
+.show-nav__list {
+  left: 0;
+}
+
+@media (max-width: 590px) {
+  .contact__btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 545px) {
+  .nav__logo {
+    max-width: 120px;
+    max-height: 70px;
+  }
+  .nav__logo img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 490px) {
+  .contact__btn {
+    padding: 4px 12px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .menu__btn {
+    max-width: 40px;
+    max-height: 40px;
+  }
+
+  .menu__btn img {
+    width: 100%;
+  }
+  .nav__list,
+  .nav__btns {
+    gap: 15px;
+  }
+  .nav__container {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  .nav__logo {
+    width: 80px;
+  }
+
+  .menu__btn {
+    width: 25px !important;
+    height: 25px !important;
+  }
+
+  .list__lan {
+    gap: 10px !important;
+  }
+  .nav__list,
+  .nav__btns {
+    gap: 10px;
+  }
+  .nav__container {
+    gap: 10px;
+  }
+}
+
+.light header{
+  background: var(--secondaryColor) !important;
+}
+
+.light nav{
+  background: var(--secondaryColor) !important;
+}
+
+.light {
+     --firstColor:black;
+    --secondaryColor:white;
+}
